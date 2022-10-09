@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ body {
+  background: #E5E5E5;
+ }
+
+ body::before {
+  content: '';
+  width: 100vw;
+  height: 368px;
+  display: block;
+  background: #121214;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+ }
+
+ .container {
+  width: 736px;
+  height: auto;
+  margin: 0 auto;
+ }
+
+ header {
+  width: 319px;
+  height: 160px;
+  margin-top: 80px;
+ }
+
+ header h1 {
+  font-family: 'Archivo', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+ }
+
+ header p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #42D3FF;
+ }
+
+ form {
+  width: 736px;
+  min-height: auto;
+  background: #FAFAFC;
+  border-radius: 8px 8px 0px 0px;
+  margin-top: 42px;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+ }
+
+ fieldset {
+  border: none;
+ }
+
+ fieldset legend {
+  width: 100%;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: #32264D;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E6E6F0;
+ }
+
+ .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+ }
+
+ form label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+ }
+
+ form label span {
+  font-family: 'Poppins';
+  padding-left: 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+ }
+
+ form label span:hover {
+  color: #888392;
+ }
+
+ form input {
+  background: #FAFAFC;
+  height: 56px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #888392;
+  padding-left: 24px;
+ }
+
+ form textarea {
+  background: #FAFAFC;
+  height: 168px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #C1BCCC;
+  padding: 20px 0 20px 20px;
+ }
+
+ form select {
+  background: #FAFAFC;
+  height: 56px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #888392;
+  padding-left: 24px;
+  appearance: none;
+  background-image: url(./img/select.svg);
+  background-repeat: no-repeat;
+  background-position: right 24px top 50%;
+
+ }
+
+ form input:focus, 
+ form textarea:focus,
+ form select:focus,
+ .checkbox-wrapper input:focus + label::before {
+  outline: 1px solid #42D3FF;
+  box-shadow: 0 0 2px #42D3FF
+ }
+
+.wrapper-3 {
+  display: flex;
+  gap: 20px;
+}
+
+.wrapper-3 > :nth-child(1) {
+  width: 100%;
+}
+
+.checkbox-wrapper {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+  padding-top: 24px;
+  position: relative;
+  
+}
+
+.checkbox-wrapper input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  opacity: 0;
+}
+
+.checkbox-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.checkbox-wrapper label::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px
+}
+
+.checkbox-wrapper input:checked + label::before {
+  background: url(./img/checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+footer {
+  height: 136px;
+  background: #F0F0F4;
+  border-radius: 0px 0px 8px 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 63px 40px 63px;
+}
+
+footer input {
+  height: 56px;
+  background: #04D361;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Archivo';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+footer input:hover {
+  background: #03883f;
+}
+
+input:required {
+  outline: 1px solid #ff1010;
+}
+
+
+
